@@ -1,0 +1,14 @@
+<nav class="navbar bg-warning px-3 justify-content-between d-none d-lg-flex">
+    <!-- Left side: App name -->
+    <span routerLink="" class="navbar-brand fw-bold mb-0 h1">🍔 Burger Queen</span>
+  
+    <!-- Right side: Cart icon & Signup button -->
+    <div class="d-flex align-items-center gap-4">
+        <div routerLink="/cart" class="position-relative bell-wrapper">
+            <i class="bi bi-cart fs-5"></i>
+            <span class="badge rounded-pill bg-danger cart_count">{{ cartCount }}</span>
+          </div>
+            <a class="btn btn-sm fw-semibold cust_bg_btn">Sign Up / Sign In</a>
+    </div>
+  </nav>
+  

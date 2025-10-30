@@ -1,0 +1,25 @@
+.custom_flex{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar a {
+    text-decoration: none;
+  }
+
+  .bell-wrapper {
+    position: relative;
+    display: inline-block;
+  
+    .cart_count {
+      position: absolute;
+      top: -2px;  
+      right: -10px; 
+      font-size: 12px;
+      padding: 3px 6px;
+    }
+  }
+  .cust_bg_btn{
+    background-color: #fff3cd;
+  }
+  

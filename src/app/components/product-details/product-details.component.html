@@ -1,0 +1,87 @@
+<header class="mobile-header d-block d-lg-none">
+  <div class="d-flex justify-content-between align-items-center px-3 py-2">
+    <i class="bi bi-chevron-left fs-4" (click)="goBack()"></i>
+    <span class="fw-bold">Product Details</span>
+    <i class="bi bi-chevron-right fs-4" (click)="goForward()"></i>
+  </div>
+</header>
+
+
+<div class="container py-4 mt-5 " *ngFor="let product of product;">
+
+  <div class="cust_border position-relative bell-wrapper">
+    <div class="d-flex justify-content-end cust_text">
+      <img src="../assets/heart.svg" alt="" class="w-2 h-2">
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <img [src]="product.image" class="img-fluid product-img rounded">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between py-2 fw-semibold">
+    <p class="mb-0">{{ product.name }}</p>
+    <p class="mb-0">৳{{ product.price | number: '1.2-2'}}</p>
+  </div>
+  <p class="text-success mb-1">In Stock</p>
+  <div class="text-warning mt-1">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-half"></i>
+  </div>
+  <div class="d-flex justify-content-between align-items-center py-4 fw-semibold">
+    <div>
+      <p class="mb-0">Product Quantity</p>
+    </div>
+    <div class="d-flex align-items-center primary_color px-3 py-1 rounded">
+      <p class="mb-0" (click)="decreaseQty(product,product.quantity - 1)">-</p>
+      <span class="mx-3">{{ product.quantity }}</span>
+      <p class="mb-0" (click)="increaseQty(product,product.quantity + 1)">+</p>
+    </div>
+
+  </div>
+  <!-- <button class="btn btn-warning w-100" (click)="addToCart()">Add to Cart</button> -->
+
+  <div class="mt-3">
+    <strong>Product Details</strong>
+    <p [class.collapsed]="!showMore" class="mb-0">
+      {{ shortText }}
+      <span *ngIf="!showMore">...</span>
+      <span *ngIf="showMore">{{ remainingText }}</span>
+      <span (click)="toggleReadMore()" class="read-more-link">
+        {{ showMore ? 'Read Less' : 'Read More' }}
+      </span>
+    </p>
+
+
+    <div class="mt-4">
+      <strong>Related Products</strong>
+      <div class="d-flex justify-content-evenly gap-4">
+        <div *ngFor="let product of related_product;" class="d-flex flex-column justify-content-evenly mt-3 mb-2 flex-wrap">
+          <img [src]="product.image" class="related-img" />
+          <div class="d-flex flex-column justify-content-between py-2 fw-semibold">
+            <p class="mb-0">{{ product.name }}</p>
+            <p class="mb-0">৳{{ product.price | number: '1.2-2' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<footer class="mobile-footer d-block d-lg-none">
+  <div class="d-flex justify-content-around align-items-center py-2">
+    <i routerLink="/" class="bi bi-house-door"></i>
+    <i class="bi bi-grid"></i>
+    <i class="bi bi-chat-dots"></i>
+    <div routerLink="/cart" class="position-relative bell-wrapper">
+      <i class="bi bi-cart "></i>
+      <span class="badge rounded-pill bg-danger cart_count">{{ cartCount }}</span>
+    </div>
+    <i class="bi bi-person fs-4"></i>
+  </div>
+</footer>

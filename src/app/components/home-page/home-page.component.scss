@@ -1,0 +1,94 @@
+
+
+// search box
+.search-box-container {
+    margin-top: 50px;
+  .search-box {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+
+    input.form-control {
+      border: none;
+      box-shadow: none;
+      padding-left: 14px;
+      border-radius: 0;
+    }
+
+    .input-group-text {
+      border: none;
+      background-color: transparent;
+      padding-right: 14px;
+      i {
+        font-size: 1.1rem;
+        color: #333;
+      }
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+
+// products 
+.p_product{
+    border:1px solid #ffffff !important;
+    // border-color: #FED718;
+    padding: 8px;
+    border-radius: 0%;
+
+}
+
+// header notification 
+.cust_text{
+    font-size: 7px;
+}
+.bell-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .cust_text {
+    position: absolute;
+    top: 2px;   
+    right: -4px; 
+    font-size: 7px;
+    padding: 3px 4px;
+  }
+  .cart_count {
+    position: absolute;
+    top: -1px;  
+    right: -7px; 
+    font-size: 8px;
+    padding: 3px 4px;
+  }
+}
+
+
+// modal
+
+.drawer-overlay {
+  position: fixed;
+  top: 44px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1050;
+  display: flex;
+}
+
+.drawer-content {
+  width: 50vw;
+  background: #fff;
+  height: 100%;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+}
+
+.toast-message {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.95;
+  font-weight: 500;
+}

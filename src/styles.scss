@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .product-img { width: 100%; }
+    .product-card { margin-bottom: 1rem; }
+  }
+  
+  /* Tablet */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .product-img { width: 80%; }
+  }
+  
+  /* Desktop */
+  @media (min-width: 769px) {
+    .product-img { width: 60%; }
+  }
+  
+
+  
+$header-footer-bg: #094c52;
+
+.primary_color{
+    background: $header-footer-bg;
+}
+.mobile-header {
+  background-color: $header-footer-bg;
+  color: #fcf8f8;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgb(5, 44, 86);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.mobile-footer {
+  background-color: #ffffff;
+  color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+// Adjust content to avoid overlap with fixed footer
+.content {
+  padding-bottom: 60px; // adjust based on footer height
+}
+
+.cust_pointer{
+  cursor: pointer;
+}
