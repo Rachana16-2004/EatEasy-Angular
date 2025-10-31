@@ -1,5 +1,5 @@
 # 🍔 EatEasy – Online Food Delivery System
-
+ 
 ## 📖 Overview
 **EatEasy** is a web-based **online food delivery system** built using **Angular**.  
 It allows users to browse, view, and order food items with an attractive, responsive, and user-friendly interface.  
