@@ -7,7 +7,7 @@ The project demonstrates modular Angular development with reusable components, r
 
 ---
 
-## 🚀 Features
+## 🚀 Features 
 - Browse popular and special food items  
 - View detailed product information (image, price, description)  
 - Add items to cart (if implemented)  
