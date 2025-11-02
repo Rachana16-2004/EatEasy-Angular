@@ -6,7 +6,7 @@ It allows users to browse, view, and order food items with an attractive, respon
 The project demonstrates modular Angular development with reusable components, routing, and SCSS-based styling.
    
 --- 
-
+ 
 ## 🚀 Features 
 - Browse popular and special food items  
 - View detailed product information (image, price, description)  
