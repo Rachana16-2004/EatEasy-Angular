@@ -4,7 +4,7 @@
 **EatEasy** is a web-based **online food delivery system** built using **Angular**.  
 It allows users to browse, view, and order food items with an attractive, responsive, and user-friendly interface.  
 The project demonstrates modular Angular development with reusable components, routing, and SCSS-based styling.
-
+ 
 --- 
 
 ## 🚀 Features 
