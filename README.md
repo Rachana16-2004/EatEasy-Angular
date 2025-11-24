@@ -63,4 +63,4 @@ The project demonstrates modular Angular development with reusable components, r
 ## 📸 Screenshots
 ![Uploading image.png…](https://github.com/Rachana16-2004/EatEasy-Angular/blob/main/Screenshot%202025-10-29%20220812.png?raw=true)
 ![](https://github.com/Rachana16-2004/EatEasy-Angular/blob/main/Screenshot%202025-10-29%20220953.png?raw=true)
-![](<img width="1231" height="837" alt="image" src="https://github.com/user-attachments/assets/11cdedb2-3e7c-4206-86bc-dacf5cd16c0d)
+![](https://github.com/Rachana16-2004/EatEasy-Angular/blob/main/Screenshot%202025-10-29%20221210.png?raw=true)
